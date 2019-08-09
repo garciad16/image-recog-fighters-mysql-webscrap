@@ -2,6 +2,7 @@
 image recognition with OpenCv. Fighter's boxing record into database using webscrapping
 
 To run the program:
+
     -> python3 tester.py
 
 Implementation of the program:
@@ -24,6 +25,7 @@ Implementation of the program:
                     -> What is now in display is the respective fighter's boxing record and their opponents that is scrapped from https://boxrec.com
 
 Problems with the program:
+
     -> Image recognition is not accurate, can mistaken the image as someone else 
     -> Only works with one face in the image
     -> Confidence level low sometimes
