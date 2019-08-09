@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<BODY bgcolor="grey">
+<center>
+<H1>Fighter's First Fight Outcome </H1> <br>
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Opponent</th>
+			<th>Outcome</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for row in value %}
+		<tr>
+			<td>{{row[1]}}</td>
+			<td>{{row[2]}}</td>
+			<td>{{row[5]}}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+<H1>List of Fighters </H1> <br>
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>DOB</th>
+			<th>Nationality</th>
+			<th>Record</th>
+			<th>Achievement</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for row in valueList %}
+		<tr>
+			<td>{{row[1]}}</td>
+			<td>{{row[2]}}</td>
+			<td>{{row[3]}}</td>
+			<td>{{row[4]}}</td>
+			<td>{{row[5]}}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</thead>
+</table>
+
+</div>
+</center>
+
+</BODY>
+</HTML>

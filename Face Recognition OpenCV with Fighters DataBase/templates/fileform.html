@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Simple file upload using Python Flask</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+		}
+</style>
+</head>
+<body bgcolor="grey">
+	<H3>Upload picture of Fighter for their boxing record</H3> <br>
+	<form action="/handleUpload" method="post" enctype="multipart/form-data">
+		Choose the picture: <input type="file" name="photo"/><BR>
+		<input type="submit" value="Upload"/>
+    </form> 
+<center>
+<H1>List of Fighters </H1> <br>
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>DOB</th>
+			<th>Nationality</th>
+			<th>Record</th>
+			<th>Achievement</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for row in valueList %}
+		<tr>
+			<td>{{row[1]}}</td>
+			<td>{{row[2]}}</td>
+			<td>{{row[3]}}</td>
+			<td>{{row[4]}}</td>
+			<td>{{row[5]}}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</thead>
+</table>
+</center>
+</body>
+</html>
